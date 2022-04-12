@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.owl {
+  height: 30rem;
+  width: 30rem;
+  position: absolute;
+  left: 65%;
+  top: 8.6rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          z-index: -1;
+}
+
+@media only screen and (max-width: 920px){
+  .owl {
+    top: 24.8rem;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .owl {
+    left: 55%;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  .owl {
+    top: 24rem;
+    width: 25rem;
+    left: 42%;
+  }
+}
+
+.owl .face:before {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  height: 3rem;
+  top: -0.6rem;
+  left: 12.2rem;
+  border-radius: 100%;
+  background: #3491aa;
+  z-index: -3;
+}
+
+.owl .face .eye {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: -1rem;
+  left: 10.4rem;
+  border-radius: 100%;
+  background: #fffeff;
+  border: .6rem solid #8acae2;
+  overflow: hidden;
+}
+
+.owl .face .eye:before {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #1f1b1c;
+}
+
+.owl .face .eye:after {
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 2.2rem;
+  left: 4.5rem;
+  border-radius: 100%;
+  background: #fffeff;
+}
+
+.owl .face .eye.right {
+  left: 14rem;
+}
+
+.owl .face .eye .lid {
+  -webkit-animation: blink 3s infinite;
+          animation: blink 3s infinite;
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  top: -12rem;
+  left: 0rem;
+  border-radius: 100%;
+  background: #bfe4f1;
+  z-index: 2;
+  border-radius: 0;
+}
+
+.owl .face .beak {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 2rem;
+  left: 13.65rem;
+  border-radius: 100%;
+  background: #ff8583;
+  border-radius: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: -1;
+}
+
+.owl .body {
+  position: absolute;
+  width: 7rem;
+  height: 6rem;
+  top: 2rem;
+  left: 10.7rem;
+  border-radius: 100%;
+  background: #59a8c7;
+  z-index: -2;
+}
+
+.owl .body .leg {
+  position: absolute;
+  width: 0.4rem;
+  height: 1rem;
+  top: 5.2rem;
+  left: 2rem;
+  border-radius: 100%;
+  background: #ff8583;
+}
+
+.owl .body .leg:before, .owl .body .leg:after {
+  content: '';
+  position: absolute;
+  width: 0.4rem;
+  height: 1rem;
+  top: 0;
+  left: 0.5rem;
+  border-radius: 100%;
+  background: #ff8583;
+}
+
+.owl .body .leg:after {
+  left: .5rem;
+}
+
+.owl .body .leg.right {
+  left: 4rem;
+}
+
+.owl .wings {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  top: 2rem;
+  left: 10rem;
+  border-radius: 100%;
+  background: #13738b;
+  border-radius: 100% 100% 0;
+  z-index: -3;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.owl .wings:after {
+  content: '';
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  top: -2rem;
+  left: 1.2rem;
+  border-radius: 100%;
+  background: #13738b;
+  border-radius: 100% 100% 0;
+  z-index: -3;
+  -webkit-transform: rotate(-23deg);
+          transform: rotate(-23deg);
+}
+
+@-webkit-keyframes blink {
+  0% {
+    top: -20rem;
+  }
+  5% {
+    top: 0;
+  }
+  10% {
+    top: -20rem;
+  }
+}
+
+@keyframes blink {
+  0% {
+    top: -20rem;
+  }
+  5% {
+    top: 0;
+  }
+  10% {
+    top: -20rem;
+  }
+}
+/*# sourceMappingURL=owl.css.map */

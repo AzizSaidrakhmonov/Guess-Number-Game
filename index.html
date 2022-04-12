@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess my Number</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./owl.css">
+</head>
+<body>
+
+    <div class="owl">
+        <!-- <h1>Guess Number</h1> -->
+        <div class="face">
+          <div class="eye"><div class="lid"></div></div>
+          <div class="eye right"><div class="lid"></div></div>
+          <div class="beak"></div>
+        </div>
+        <div class="body">
+          <div class="leg"></div>
+          <div class="leg right"></div>
+        </div>
+        <div class="wings"></div>
+      </div>
+
+    <div class="game-container">
+        <div class="game-top">
+            <button class="restart"><span>Restart &circlearrowright;</span><span>Restart &circlearrowright;</span></button>
+            <p class="number-gap">< Enter between <b>1</b> and <b>20</b> ></p>
+        </div>
+        <div class="guess-txt">
+  
+  <div class="waviy">
+            <span style="--i:1">G</span>
+            <span style="--i:2">u</span>
+            <span style="--i:3">e</span>
+            <span style="--i:4">s</span>
+            <span style="--i:5">s</span>
+            <span style="--i:6">M</span>
+            <span style="--i:7">y</span>
+            <span style="--i:8">N</span>
+            <span style="--i:9">u</span>
+            <span style="--i:10">m</span>
+            <span style="--i:11">b</span>
+            <span style="--i:12">e</span>
+            <span style="--i:13">r</span>
+          </div>
+        </div>
+        <div class="guess-number">
+            <div class="guess-number__inner">
+                ?
+            </div>
+        </div>
+        <div class="game-bottom">
+            <div class="checking">
+                <form class="checked-number">
+                    <input class="checked-number__input" type="number" name="number"> 
+                </form>
+                <button class="restart check"><span>Check!</span><span>Check!</span></button>
+            </div>
+            <div class="game-answers">
+                <div class="answer-description">
+                    🤔 Guess...
+                </div>
+                <div class="score">
+                    💯 Score: 20
+                </div>
+                <div class="high-score">
+                    🥇 HighScore: 0
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
